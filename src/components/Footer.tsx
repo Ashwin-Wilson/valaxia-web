@@ -19,14 +19,14 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://github.com/valaxiaofficial/"
                 className="w-10 h-10 rounded-full bg-gray-800 dark:bg-gray-900 hover:bg-blue-600 dark:hover:bg-blue-500 flex items-center justify-center transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/valaxia/"
                 className="w-10 h-10 rounded-full bg-gray-800 dark:bg-gray-900 hover:bg-blue-600 dark:hover:bg-blue-500 flex items-center justify-center transition-colors"
                 aria-label="LinkedIn"
               >
@@ -40,7 +40,7 @@ export default function Footer() {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/valaxia_official/"
                 className="w-10 h-10 rounded-full bg-gray-800 dark:bg-gray-900 hover:bg-blue-600 dark:hover:bg-blue-500 flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >

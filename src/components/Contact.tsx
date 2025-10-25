@@ -55,8 +55,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold mb-1">Email</div>
-                    <a href="mailto:contact@valaxia.com" className="text-blue-100 hover:text-white transition-colors">
-                      contact@valaxia.com
+                    <a href="mailto:valaxiaofficial@gmail.com" className="text-blue-100 hover:text-white transition-colors">
+                      valaxiaofficial@gmail.com
+
                     </a>
                   </div>
                 </div>
@@ -67,8 +68,10 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold mb-1">Phone</div>
-                    <a href="tel:+1234567890" className="text-blue-100 hover:text-white transition-colors">
-                      +1 (234) 567-890
+                    <a href="tel:+919562845383" className="text-blue-100 hover:text-white transition-colors">
+                      +91 95628 45383
+                      <br />
+                      +91 73068 79431
                     </a>
                   </div>
                 </div>
@@ -134,7 +137,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
-                    placeholder="John Doe"
+                    placeholder="Type your name"
                   />
                 </div>
 
@@ -150,7 +153,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
-                    placeholder="john@example.com"
+                    placeholder="yourMail@example.com"
                   />
                 </div>
 

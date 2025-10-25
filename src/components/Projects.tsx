@@ -4,7 +4,7 @@ const projects = [
   {
     title: 'PixPrompt',
     description: 'AI-powered prompt gallery showcasing creative prompts and their stunning visual outputs',
-    link: 'https://pixprompt.in',
+    link: 'https://pixprompt.in/',
     icon: Sparkles,
     gradient: 'from-violet-500 to-purple-600',
     tags: ['AI', 'Gallery', 'Web App'],
