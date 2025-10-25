@@ -17,7 +17,7 @@ const projects = [
     tags: ['AI', 'Marketing', 'Automation'],
   },
   {
-    title: 'Disaster Management System',
+    title: 'Dynamic Disaster Management System',
     description: 'Dynamic real-time disaster management and response coordination platform',
     icon: AlertTriangle,
     gradient: 'from-red-500 to-orange-600',
