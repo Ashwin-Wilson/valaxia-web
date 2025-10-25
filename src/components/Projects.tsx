@@ -55,13 +55,13 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 bg-gray-50">
+    <section id="projects" className="py-24 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Featured Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             Explore our portfolio of innovative solutions that have transformed
             businesses and delighted users
           </p>
@@ -73,20 +73,20 @@ export default function Projects() {
             return (
               <div
                 key={index}
-                className="group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+                className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl dark:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1 border border-transparent dark:border-gray-700"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 dark:group-hover:opacity-15 transition-opacity duration-300`}></div>
 
                 <div className="p-8">
                   <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${project.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <Icon className="w-7 h-7 text-white" />
                   </div>
 
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                     {project.title}
                   </h3>
 
-                  <p className="text-gray-600 mb-4 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
                     {project.description}
                   </p>
 
@@ -94,7 +94,7 @@ export default function Projects() {
                     {project.tags.map((tag, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-gray-100 text-gray-700 text-sm font-medium rounded-full"
+                        className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium rounded-full"
                       >
                         {tag}
                       </span>
@@ -106,7 +106,7 @@ export default function Projects() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+                      className="inline-flex items-center space-x-2 text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                     >
                       <span>Visit Project</span>
                       <ExternalLink className="w-4 h-4" />

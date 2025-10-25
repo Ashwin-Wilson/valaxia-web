@@ -27,13 +27,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-white to-gray-50">
+    <section id="contact" className="py-24 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Let's Build Something Amazing
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             Have a project in mind? We'd love to hear from you. Get in touch and
             let's make it happen.
           </p>
@@ -89,8 +89,8 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h4 className="text-xl font-bold text-gray-900 mb-4">Why Choose VALAXIA?</h4>
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-transparent dark:border-gray-700">
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Why Choose VALAXIA?</h4>
               <ul className="space-y-3">
                 {[
                   'Expert team with 5+ years of experience',
@@ -102,28 +102,28 @@ export default function Contact() {
                 ].map((item, index) => (
                   <li key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-600">{item}</span>
+                    <span className="text-gray-600 dark:text-gray-400">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-transparent dark:border-gray-700">
             {isSubmitted ? (
               <div className="flex flex-col items-center justify-center h-full text-center py-12">
-                <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-4">
                   <CheckCircle className="w-8 h-8 text-green-500" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
-                <p className="text-gray-600">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Message Sent!</h3>
+                <p className="text-gray-600 dark:text-gray-400">
                   Thank you for reaching out. We'll get back to you within 24 hours.
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                     Your Name
                   </label>
                   <input
@@ -133,13 +133,13 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
                     placeholder="John Doe"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                     Email Address
                   </label>
                   <input
@@ -149,13 +149,13 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
                     placeholder="john@example.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                     Subject
                   </label>
                   <input
@@ -165,13 +165,13 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
                     placeholder="Project Inquiry"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                     Message
                   </label>
                   <textarea
