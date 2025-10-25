@@ -2,7 +2,7 @@ import { ExternalLink, Sparkles, Shield, Navigation, Heart, Users, Camera, Alert
 
 const projects = [
   {
-    title: 'PixPrompt',
+    title: 'PixPrompt.in',
     description: 'AI-powered prompt gallery showcasing creative prompts and their stunning visual outputs',
     link: 'https://pixprompt.in/',
     icon: Sparkles,
