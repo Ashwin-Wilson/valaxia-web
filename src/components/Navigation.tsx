@@ -34,10 +34,13 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-2">
-            <Code2 className={`w-8 h-8 ${isScrolled ? 'text-blue-600' : 'text-white'}`} />
+            {/* <Code2 className={`w-8 h-8 ${isScrolled ? 'text-blue-600' : 'text-white'}`} />
             <span className={`text-2xl font-bold ${isScrolled ? 'text-gray-900 dark:text-white' : 'text-white'}`}>
               VALAXIA
-            </span>
+            </span> */}
+            <img 
+            className='w-1/3 md:w-1/5'
+            src="public/logos/valaxia-logo-white.png" alt="valaxia-logo" />
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
@@ -65,12 +68,12 @@ export default function Navigation() {
             >
               {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection('contact')}
               className="bg-blue-600 text-white px-6 py-2.5 rounded-full font-medium hover:bg-blue-700 transition-all hover:scale-105"
             >
               Get Started
-            </button>
+            </button> */}
           </div>
 
           <div className="md:hidden flex items-center space-x-3">
@@ -110,12 +113,12 @@ export default function Navigation() {
                 {item}
               </button>
             ))}
-            <button
+            {/* <button
               onClick={() => scrollToSection('contact')}
               className="w-full bg-blue-600 text-white px-6 py-2.5 rounded-full font-medium hover:bg-blue-700"
             >
               Get Started
-            </button>
+            </button> */}
           </div>
         </div>
       )}
