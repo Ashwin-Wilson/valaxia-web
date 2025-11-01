@@ -40,7 +40,7 @@ export default function Navigation() {
             </span> */}
             <img 
             className='w-1/3 md:w-1/5'
-            src="public/logos/valaxia-logo-white.png" alt="valaxia-logo" />
+            src="/logos/valaxia-logo-white.png" alt="valaxia-logo" />
           </div>
 
           <div className="hidden md:flex items-center space-x-6">

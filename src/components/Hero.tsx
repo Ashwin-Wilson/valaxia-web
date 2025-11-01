@@ -31,7 +31,7 @@ export default function Hero() {
           <div className='flex justify-center m-6 md:m-12'>
             <img
               className='w-full md:w-full'
-              src="public/logos/valaxia-logo-white.png" alt="valaxia-logo" />
+              src="/logos/valaxia-logo-white.png" alt="valaxia-logo" />
           </div>
         </h1>
 
