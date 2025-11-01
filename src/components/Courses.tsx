@@ -5,7 +5,7 @@ const courses = [
     title: 'Python Programming Mastery',
     description: 'Master Python from basics to advanced concepts with hands-on projects and real-world applications',
     level: 'Beginner to Advanced',
-    duration: '12 Weeks',
+    duration: '10 Hr',
     students: '500+',
     rating: 4.8,
     modules: [
@@ -18,6 +18,7 @@ const courses = [
     ],
     highlight: 'Available Now',
     color: 'from-blue-500 to-cyan-500',
+    link: 'https://learn.valaxia.com'
   },
   {
     title: 'Full Stack Web Development',
@@ -112,11 +113,10 @@ export default function Courses() {
                         {[...Array(5)].map((_, i) => (
                           <Star
                             key={i}
-                            className={`w-4 h-4 ${
-                              i < Math.floor(course.rating)
-                                ? 'text-yellow-400 fill-current'
-                                : 'text-gray-300'
-                            }`}
+                            className={`w-4 h-4 ${i < Math.floor(course.rating)
+                              ? 'text-yellow-400 fill-current'
+                              : 'text-gray-300'
+                              }`}
                           />
                         ))}
                       </div>
@@ -143,19 +143,23 @@ export default function Courses() {
                   </ul>
                 </div>
 
-                <button
-                  disabled={course.highlight === 'Coming Soon'}
-                  className={`w-full py-3 px-6 rounded-xl font-semibold flex items-center justify-center space-x-2 transition-all ${
-                    course.highlight === 'Coming Soon'
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={course.link ? course.link : ''}>
+                  <button
+                    disabled={course.highlight === 'Coming Soon'}
+                    className={`w-full py-3 px-6 rounded-xl font-semibold flex items-center justify-center space-x-2 transition-all ${course.highlight === 'Coming Soon'
                       ? 'bg-gray-100 dark:bg-gray-700 text-gray-400 dark:text-gray-500 cursor-not-allowed'
                       : 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:shadow-lg hover:scale-105'
-                  }`}
-                >
-                  <span>{course.highlight === 'Coming Soon' ? 'Coming Soon' : 'Enroll Now'}</span>
-                  {course.highlight !== 'Coming Soon' && (
-                    <ArrowRight className="w-4 h-4" />
-                  )}
-                </button>
+                      }`}
+                  >
+                    <span>{course.highlight === 'Coming Soon' ? 'Coming Soon' : 'Enroll Now'}</span>
+                    {course.highlight !== 'Coming Soon' && (
+                      <ArrowRight className="w-4 h-4" />
+                    )}
+                  </button>
+                </a>
               </div>
             </div>
           ))}
