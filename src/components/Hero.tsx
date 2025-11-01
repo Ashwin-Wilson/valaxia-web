@@ -25,9 +25,14 @@ export default function Hero() {
 
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
           Build The Future With
-          <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+          {/* <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             VALAXIA
-          </span>
+          </span> */}
+          <div className='flex justify-center m-5'>
+            <img
+              className='w-full'
+              src="public/logos/valaxia-logo-white.png" alt="valaxia-logo" />
+          </div>
         </h1>
 
         <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
