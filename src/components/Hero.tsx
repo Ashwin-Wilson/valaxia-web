@@ -28,14 +28,14 @@ export default function Hero() {
           {/* <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             VALAXIA
           </span> */}
-          <div className='flex justify-center m-5'>
+          <div className='flex justify-center m-6 md:m-12'>
             <img
-              className='w-full'
+              className='w-full md:w-full'
               src="public/logos/valaxia-logo-white.png" alt="valaxia-logo" />
           </div>
         </h1>
 
-        <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-md md:text-2xl text-white/80 mb-6 max-w-3xl mx-auto leading-relaxed">
           We craft exceptional websites, mobile apps, AI solutions, and intelligent automations
           that drive real business growth
         </p>
@@ -57,7 +57,7 @@ export default function Hero() {
           </button>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-6 max-w-4xl mx-auto">
           {[
             { number: '50+', label: 'Projects Delivered' },
             { number: '30+', label: 'Happy Clients' },
